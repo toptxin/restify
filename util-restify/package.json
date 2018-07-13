@@ -1,0 +1,61 @@
+{
+  "name": "util-restify",
+  "description": "restify的封装连接器",
+  "version": "2.0.0",
+  "homepage": "http://gitlab.umiit.cn/node/util-restify",
+  "author": {
+    "name": "Elaine",
+    "email": "trtyasd@163.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.umiit.cn/node/util-restify.git"
+  },
+  "bugs": {
+    "url": "http://gitlab.umiit.cn/node/util-restify/issues"
+  },
+  "main": "lib/index",
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-contrib-nodeunit": "~1.0.0",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt": "~0.4.5"
+  },
+  "keywords": [],
+  "publishConfig": {
+    "registry": "http://m2.umiit.cn/content/repositories/npm-umi/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "restify": "^4.0.4"
+  },
+  "gitHead": "13a0977c2ecf9db39eaada186b18d3750f63fc39",
+  "readme": "# util-restify\n\nrestify的封装连接器\n\n## Getting Started\nInstall the module with: `npm install util-restify`\n\n## Documentation\n支持两种配置(**通常配置在config.json中**)：\n\n+ 本地测试，不发送http请求，直接加载本地的测试数据文件\n\n```\n{ \"model\": \"test\", \"path\": \"xxx\" }\n```\n\n+ 远程rest\n\n```\n{\n\t\"default\": {\n\t\tconnectTimeout: 3000, //连接超时\n\t\trequestTimeout: 10000, //响应超时\n\t\tretry: false, //是否重试，建议关闭\n\t\turl: url  //远程地址\n\t}\n}\n```\n\n## Examples\n_(Coming soon)_\n\n## Release History\n_(Nothing yet)_\n\n## License\nCopyright (c) 2016 xiejun",
+  "readmeFilename": "README.md",
+  "_id": "util-restify@2.0.0",
+  "_shasum": "377e999d6b693dc534a145f6fe185745f1bc6ae7",
+  "_from": "util-restify@>=2.0.0 <3.0.0",
+  "_npmVersion": "2.14.1",
+  "_nodeVersion": "0.12.7",
+  "_npmUser": {
+    "name": "umi",
+    "email": "Elaine@umiit.cn"
+  },
+  "maintainers": [
+    {
+      "name": "umi",
+      "email": "Elaine@umiit.cn"
+    }
+  ],
+  "dist": {
+    "shasum": "377e999d6b693dc534a145f6fe185745f1bc6ae7",
+    "tarball": "http://m2.umiit.cn/content/groups/npm/util-restify/-/util-restify-2.0.0.tgz"
+  },
+  "_resolved": "http://m2.umiit.cn/content/groups/npm/util-restify/-/util-restify-2.0.0.tgz"
+}
